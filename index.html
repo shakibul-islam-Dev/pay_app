@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-theme="Dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwindcss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Diasy UI -->
+
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Pay | Login</title>
+    <style>
+      /* Googole Font */
+
+      * {
+        font-family: 'Outfit', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <div class="logo w-[200px] mx-auto pt-32">
+      <img src="./assets/Logo-full.png" />
+    </div>
+    <!-- Login Form -->
+    <div class="form pt-9">
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto">
+        <!-- Card Start -->
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label
+              class="label text-neutral-950 font-bold outline-none border-none"
+              >Mobile Number</label
+            >
+            <input
+              id="user-number"
+              type="email"
+              maxlength="11"
+              min="11"
+              value="01617897307"
+              class="input outline-none border-none"
+              placeholder="Enter your number"
+            />
+            <label class="label text-neutral-950 font-bold">4 Digit Pin</label>
+            <input
+              id="user-pin"
+              maxlength="16"
+              min="8"
+              value="1234567"
+              type="password"
+              class="input outline-none border-none"
+              placeholder="Enter 4 Digit Pin"
+            />
+            <button
+              id="login-button"
+              class="btn btn-neutral mt-4 bg-primary rounded-full outline-none border-none"
+            >
+              Login
+            </button>
+          </fieldset>
+        </div>
+      </div>
+      <!-- card End -->
+    </div>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
