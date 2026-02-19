@@ -1,7 +1,7 @@
 console.log('Apps Are working')
 
 const logButton = document.getElementById('login-button')
-//addEventListener
+//addEventListener for Loging
 logButton.addEventListener('click', function () {
   //User Id Grabbing
   const userNumber = document.getElementById('user-number')
