@@ -17,3 +17,14 @@ function setBalance(value) {
   balanceElement.innerText = value
   return Number(value)
 }
+
+//machin id hide all>show only
+
+function showOnly(id) {
+  const addMoney = document.getElementById('addmoneybody')
+  const cashout = document.getElementById('cashoutbody')
+  addMoney.classList.add('hidden')
+  cashout.classList.add('hidden')
+  const selected = document.getElementById(id)
+  selected.classList.remove('hidden')
+}
